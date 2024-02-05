@@ -1,0 +1,255 @@
+.verticcal_line {
+  height: 80px;
+  border: 1px solid lightgray;
+}
+
+#search_bar {
+  width: 45%;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  background-color: #f8f8f8;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-sizing: border-box; /* Added to include padding in the width */
+}
+#search_bar > input {
+  width: 95%;
+  border: none;
+  background-color: transparent;
+}
+.my_cards {
+  width: 82%;
+  margin: auto;
+  overflow-x: scroll;
+}
+#categories_section {
+  width: 85%;
+  margin: auto;
+}
+
+.my_list {
+  white-space: nowrap;
+}
+.my_list > img {
+  display: inline-block;
+}
+.category_section {
+  width: 82%;
+  margin: auto;
+  overflow-x: scroll;
+}
+.my_card {
+  width: 200px;
+  display: inline-block !important;
+  margin-inline: 10px;
+}
+.card_timer {
+  font-size: 9px;
+  font-weight: 700;
+  background-color: #f8f8f8;
+  width: fit-content;
+  border-radius: 6px;
+  padding: 2px 4px;
+}
+.card_weight {
+  font-size: 10px;
+  color: #898989;
+}
+footer {
+  width: 82%;
+  margin: auto;
+}
+#footer_row1 {
+  display: flex;
+  justify-content: space-between;
+}
+#table_1 {
+  flex: 1;
+}
+#footer_row2 {
+  display: flex;
+  justify-content: space-between;
+}
+#footer_row2 > p {
+  width: 35%;
+  color: #717171;
+  font-size: 13px;
+  justify-content: space-between;
+}
+#footer_row3 {
+  color: #717171;
+}
+#download_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: #838383;
+  font-weight: 700;
+}
+#download_section > img {
+  width: 100px;
+}
+#social_icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.social_icon {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+}
+table {
+  width: 100%;
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .vertical_line,
+  #search_bar {
+    display: none; /* Hide elements that are not needed on mobile */
+  }
+
+  #nav_delivery,
+  #search_bar {
+    width: auto; /* Allow these elements to take up the necessary space */
+  }
+
+  .my_cards,
+  #categories_section,
+  .category_section {
+    width: 100%; /* Full width for better use of space on mobile */
+    overflow-x: auto; /* Keep the horizontal scroll if needed */
+  }
+
+  .my_card {
+    width: 100%; /* Full width for cards on mobile */
+    margin-inline: 0; /* Remove side margins */
+  }
+
+  footer {
+    width: 100%; /* Full width for footer on mobile */
+  }
+
+  #footer_row1,
+  #footer_row2,
+  #footer_row3,
+  #download_section,
+  #social_icons {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align the items */
+    text-align: center; /* Center-align the text */
+  }
+
+  #footer_row2 > p,
+  #download_section > img {
+    width: auto; /* Auto width for images and paragraphs */
+  }
+
+  .social_icon {
+    width: 40px; /* Smaller icons on mobile */
+    height: 40px;
+    margin-bottom: 10px; /* Space below icons */
+  }
+
+  table {
+    display: block; /* Allow table to scroll horizontally on small screens */
+    overflow-x: auto;
+  }
+}
+
+/* ... Your existing CSS ... */
+
+/* Mobile devices */
+@media (max-width: 768px){
+  /* Hide the vertical line and search bar */
+  .verticcal_line,
+  #hero_section {
+    display: none;
+  }
+  /* Hide the hero section */
+  #hero_section {
+    display: none !important;
+  }
+  #search_bar {
+    width: 100%; /* Full width */
+    margin: 10px 0; /* Add some top and bottom margin for spacing */
+  }
+
+  /* Adjust the input within the search bar */
+  #search_bar > input {
+    width: 90%; /* Subtract the padding from the width */
+  }
+
+  /* Adjust the navbar */
+  nav {
+    flex-direction: column; /* Stack the items vertically */
+    align-items: center;
+
+  /* Adjust the layout for the cards */
+  .my_cards,
+  #categories_section,
+  .category_section {
+    width: 100%;
+    margin: auto;
+    overflow-x: hidden; /* Changed to hidden to prevent horizontal scrolling */
+  }
+  .my_cards{
+  margin-top: 20px;
+  }
+  /* Adjust the size of the cards to be more mobile-friendly */
+  .my_card {
+    width: auto; /* Allow cards to fit to the container's width */
+    margin: 10px; /* Add some margin */
+  }
+
+  /* Full width for the footer on mobile */
+  footer {
+    width: 100%;
+    padding: 0 15px; /* Add padding to avoid edge-to-edge content */
+  }
+
+  /* Adjust the footer sections for a mobile-friendly layout */
+  #footer_row1,
+  #footer_row2,
+  #footer_row3,
+  #download_section,
+  #social_icons {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Allow paragraphs and images to take the necessary space */
+  #footer_row2 > p,
+  #download_section > img {
+    width: auto;
+  }
+
+  /* Smaller icons on mobile */
+  .social_icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  /* Responsive table layout */
+  table,
+  #table_1,
+  #table_2 {
+    display: block;
+    overflow-x: auto;
+  }
+
+  /* Adjustments for useful links and categories in the footer */
+  #footer_row1 > div,
+  #table_1 h4,
+  #table_2 h4 {
+    margin-bottom: 15px; /* Add some space below each title */
+  }
+}
+
+/* ... You can add more responsive styles as needed ... */
